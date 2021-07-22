@@ -1,5 +1,0 @@
-/home/xgy/tres/build/CMakeFiles/rebuild_cache.dir
-/home/xgy/tres/build/CMakeFiles/edit_cache.dir
-/home/xgy/tres/build/src/CMakeFiles/rebuild_cache.dir
-/home/xgy/tres/build/src/CMakeFiles/main.dir
-/home/xgy/tres/build/src/CMakeFiles/edit_cache.dir

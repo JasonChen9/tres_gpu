@@ -1,42 +1,34 @@
 #include <iostream>
-#include "tres_gather_nvml.h"
+
+#include "TresGather.h"
 
 int main() {
-  auto *tresnvml = new Tres_nvml::tres_nvml();
-  auto *tres_acct = new Tres_gather_nvml::tres_gather_nvml(tresnvml);
+  NVML::TresNvml tres_nvml;
+  auto *ptres_nvml = &tres_nvml;
+  NVML::TresGatherNvml tres_acct(ptres_nvml);
 
-  if(tres_acct->Init()!=SlurmxErr::kOk){
-    delete tres_acct;
-    delete tresnvml;
+  if (tres_acct.Init() != SlurmxErr::kOk) {
     return 1;
   }
 
-  if(tres_acct->TresGatherProcInfo()!=SlurmxErr::kOk){
-    tres_acct->Fini();
-    delete tres_acct;
-    delete tresnvml;
+  if (tres_acct.TresGatherProcInfo() != SlurmxErr::kOk) {
+    tres_acct.Fini();
+
     return 1;
   }
 
-  auto info = new std::string;
+  std::string info;
 
-  if(tres_acct->ConvertProcInfoToString(info)!=SlurmxErr::kOk){
-    delete info;
-    tres_acct->Fini();
-    delete tres_acct;
-    delete tresnvml;
+  if (tres_acct.ConvertProcInfoToString(info) != SlurmxErr::kOk) {
+    tres_acct.Fini();
+
     return 1;
   }
-  printf("%s\n", info->c_str());
-  delete info;
+  printf("%s\n", info.c_str());
 
-  if(tres_acct->Fini()!=SlurmxErr::kOk){
-    delete tres_acct;
-    delete tresnvml;
+  if (tres_acct.Fini() != SlurmxErr::kOk) {
     return 1;
   }
 
-  delete tres_acct;
-  delete tresnvml;
   return 0;
 }

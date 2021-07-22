@@ -1,8 +1,0 @@
-/home/xgy/tres/cmake-build-debug-remote-host/CMakeFiles/rebuild_cache.dir
-/home/xgy/tres/cmake-build-debug-remote-host/CMakeFiles/edit_cache.dir
-/home/xgy/tres/cmake-build-debug-remote-host/src/CMakeFiles/rebuild_cache.dir
-/home/xgy/tres/cmake-build-debug-remote-host/src/CMakeFiles/main.dir
-/home/xgy/tres/cmake-build-debug-remote-host/src/CMakeFiles/edit_cache.dir
-/home/xgy/tres/cmake-build-debug-remote-host/test/CMakeFiles/rebuild_cache.dir
-/home/xgy/tres/cmake-build-debug-remote-host/test/CMakeFiles/tres_gather_test.dir
-/home/xgy/tres/cmake-build-debug-remote-host/test/CMakeFiles/edit_cache.dir

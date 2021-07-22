@@ -2,14 +2,14 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="On explicit save action" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
     <serverData>
-      <paths name="Remote Host (38a09c46-2dc3-4c31-8519-38d378c28c93)">
+      <paths name="Remote Host (06ae54ad-c33c-4258-9586-3335845a4c94)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/xgy/tres" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/xgy/tres_gpu" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host-coverage" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host" />
           </excludedPaths>
         </serverdata>
       </paths>

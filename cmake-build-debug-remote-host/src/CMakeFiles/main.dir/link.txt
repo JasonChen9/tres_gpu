@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/tres_gather.cpp.o CMakeFiles/main.dir/tres_gather_nvml.cpp.o CMakeFiles/main.dir/tres_nvml.cpp.o CMakeFiles/main.dir/tres_gather_cgroup.cpp.o CMakeFiles/main.dir/tres_gather_cuda.cpp.o -o main   -L/home/xgy/tres/lib  -Wl,-rpath,/home/xgy/tres/lib -lnvidia-ml -lcuda ../../third_party/fmt/lib/libfmt.a 
